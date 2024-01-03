@@ -1,96 +1,168 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
+import styles from "./Sellerinfo.module.css";
+import { LuAlarmClock } from "react-icons/lu";
 
 const SellerInfo = () => {
   return (
-    <div className="lg:w-[1200px] w-[600px] h-[150px]  relative">
-      <div className="absolute lg:w-[1200px] w-[600px]  -top-[370px] lg:-top-[750px] lg:flex h-[70px] p-4 bg-white  justify-between left-[350px]">
-        <div className="flex gap-3">
+    <div className="relative">
+      <div className="absolute lg:border-2 lg:w-[1190px] rounded-md w-full  top-[250px] lg:-top-[155px] lg:flex p-4 lg:mx-4 lg:p-4 bg-white  justify-between lg:left-[350px]">
+        <div className="flex p-3 lg:border-none border-2 lg:p-3">
           <div className="">
             <img
-              className="h[100px] w-[100px] rounded-full"
+              className="lg:h-[80px] h-[50px] m-2 mt-2 lg:m-0 w-[50px] bg-slate-300 lg:mt-1 lg:w-[80px] rounded-full"
               src="https://i.ibb.co/ynD7Kj9/Ellipse-2132-removebg-preview.png"
             ></img>
           </div>
-          <div>
-            <p>Al-Amin Gallery</p>
+          <div className="relative ">
+            <p className="lg:ml-3 ml-2 text-[14px]">Al-Amin Gallery</p>
             <div className="flex mt-2 items-center justify-center">
-              <div className="bg-stone-400 h-[12px]  mr-1 rounded-full w-[12px]"></div>
+              <div className="bg-stone-400 h-[8px] absolute mr-[100px] lg:mr-[117px] rounded-full w-[8px]"></div>
               <div>
-                <p className="text-stone-300">
-                  <span> </span> Active 6 Hours ago
+                <p className="text-stone-300 ml-1 lg:ml-0 text-[10px]">Active 6 Hours ago</p>
+              </div>
+            </div>
+            <div className="flex lg:ml-2  lg:gap-5 mt-5">
+              <div className="ml-1">
+                <p className="text-sky-600">
+                  <a href="#" className="hover:underline text-[14px]">
+                    Visit Store
+                  </a>
                 </p>
               </div>
-            </div>
-            <div className="flex gap-10 mt-5">
-              <div>
-                <p className="text-sky-600">Visit Store </p>
-              </div>
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-1">
                 <div>
-                  <img src="https://i.ibb.co/JmS50fr/Message-17-removebg-preview.png"></img>
+                  <svg
+                    className="mt-1 ml-3 lg:ml-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="12"
+                    viewBox="0 0 14 12"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.00426 2.50814C3.32829 2.50002 3.70432 2.50002 4.1482 2.50002H5.18524C6.63723 2.50002 7.36322 2.50002 7.91781 2.78406C8.40564 3.03391 8.80225 3.43258 9.05081 3.92294C9.33339 4.4804 9.33339 5.21016 9.33339 6.66968V8.07634C9.33339 8.22208 9.33339 8.29496 9.33049 8.35654C9.29133 9.18793 8.86662 9.91634 8.2317 10.3655L9.29942 11.1271C9.8215 11.4995 10.5075 10.9617 10.2693 10.3669C10.1005 9.94548 10.4112 9.48711 10.8657 9.48711H11.2167C12.4318 9.48711 13.4169 8.50344 13.4169 7.29002V4.8269C13.4169 3.19567 13.4169 2.38006 13.099 1.75701C12.8193 1.20896 12.3731 0.763389 11.8243 0.484145C11.2004 0.166687 10.3837 0.166687 8.7502 0.166687H7.58354C5.95005 0.166687 5.13331 0.166687 4.5094 0.484145C3.96059 0.763389 3.5144 1.20896 3.23477 1.75701C3.12357 1.97494 3.05127 2.21643 3.00426 2.50814Z"
+                      fill="#37A5BF"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M8.50266 4.33887C8.74992 4.83075 8.74992 5.47466 8.74992 6.76247V8.00363C8.74992 8.13223 8.74992 8.19653 8.74738 8.25087C8.69206 9.43534 7.75721 10.3829 6.58868 10.439C6.53507 10.4416 6.4643 10.4416 6.32277 10.4416L6.28645 10.4416C5.82356 10.4446 5.37266 10.5911 4.99427 10.8614L4.97021 10.8787L3.78571 11.7363C3.37965 12.0303 2.84607 11.6058 3.03139 11.1361C3.16267 10.8035 2.92096 10.4416 2.56749 10.4416H2.29447C1.34939 10.4416 0.583252 9.665 0.583252 8.70704V6.76247C0.583252 5.47466 0.583252 4.83075 0.830506 4.33887C1.048 3.9062 1.39504 3.55443 1.82188 3.33398C2.30715 3.08335 2.94239 3.08335 4.21288 3.08335H5.12029C6.39078 3.08335 7.02602 3.08335 7.51129 3.33398C7.93814 3.55443 8.28517 3.9062 8.50266 4.33887ZM2.91659 6.72919C2.67496 6.72919 2.47909 6.92506 2.47909 7.16669C2.47909 7.40831 2.67496 7.60419 2.91659 7.60419H6.41658C6.65821 7.60419 6.85408 7.40831 6.85408 7.16669C6.85408 6.92506 6.65821 6.72919 6.41658 6.72919H2.91659Z"
+                      fill="#37A5BF"
+                    />
+                  </svg>
                 </div>
-                <div>
-                  <p className="text-sky-600">Chat</p>
+                <div className="">
+                  <p className="text-sky-600">
+                    <a href="#" className="hover:underline text-[12px]">
+                      Chat
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="ml-5">
-            <p className="mb-3">
-              Seller Rating: <span className="ml-8">95%</span>
+          <div className="lg:ml-7 ml-8">
+            <p className="mb-3 text-[12px]">
+              Seller Rating: <span className="lg:ml-8 ml-[26px] text-[16px]">95%</span>
             </p>
-            <p className="my-3">
-              Ship on Time: <span className="ml-7">90%</span>
+            <p className="my-3 text-[12px]">
+              Ship on Time: <span className="lg:ml-7 ml-[23px] text-[16px]">90%</span>
             </p>
-            <p>
-              Response Rate: <span className="ml-4">55%</span>
+            <p className="text-[12px]">
+              Response Rate: <span className="lg:ml-4 ml-[13px] text-[16px]">55%</span>
             </p>
           </div>
         </div>
-        <div className="lg:p-0 p-4 w-[200px]">
-          <p>Service</p>
-          <div className="flex  gap-2 items-center">
+
+        <div className={styles.verticalLine}></div>
+
+        <div className="mt-4 lg:mt-0 w-[200px]">
+          <p className="text-[16px]">Service</p>
+          <div className="flex mt-1 gap-2 items-center">
             <div>
-              <img src="https://i.ibb.co/n7wpxmM/Time-Circle-6-removebg-preview.png"></img>
+              <LuAlarmClock className="opacity-60" />
             </div>
             <div>
-              <p className="text-orange-400">7 day return</p>
+              <p className="text-orange-400 text-[14px]">7 day return</p>
             </div>
           </div>
-          <p className="ml-6">Change of mind is not applicable</p>
-          <div className="flex  gap-2 items-center">
+          <p className="ml-6 mt-1 text-[12px]">Change of mind is not applicable</p>
+          <div className="flex mt-2 gap-2 items-center">
             <div>
-              <img src="https://i.ibb.co/n7wpxmM/Time-Circle-6-removebg-preview.png"></img>
+              <LuAlarmClock className="opacity-60" />
             </div>
             <div>
-              <p className="text-slate-400">Warranty Not Available</p>
+              <p className="text-slate-400 text-[14px]">Warranty Not Available</p>
             </div>
           </div>
         </div>
-        <div className="lg:p-0 p-4 w-[350px]">
-          <p>Delivery</p>
+
+        <div className={styles.verticalLine2}></div>
+
+        <div className="lg:hidden border-[1px] w-full mt-3"></div>
+
+        <div className="mt-4 lg:mt-0 w-[350px]">
+          <p className="text-[16px]">Delivery</p>
           <div className="flex  gap-2 items-center">
             <div>
-              <img src="https://i.ibb.co/n7wpxmM/Time-Circle-6-removebg-preview.png"></img>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="16"
+                viewBox="0 0 20 16"
+                fill="none"
+              >
+                <path
+                  d="M8.28975 10.7224L10.8414 11.5001C10.8414 11.5001 17.2205 10.3336 18.0711 10.3336C18.9216 10.3336 18.9216 11.1113 18.0711 11.8889C17.2205 12.6666 14.2436 14.9995 11.6919 14.9995C9.1403 14.9995 7.4392 13.8331 5.7381 13.8331H1.48535"
+                  stroke="#707070"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M1.48535 9.16585C2.3359 8.3882 4.037 7.22172 5.7381 7.22172C7.4392 7.22172 11.4793 8.77703 12.1172 9.55468C12.7551 10.3323 10.8414 11.4988 10.8414 11.4988M6.58865 4.88876V1.77814C6.58865 1.5719 6.67826 1.3741 6.83777 1.22826C6.99728 1.08242 7.21362 1.00049 7.4392 1.00049H17.6458C17.8714 1.00049 18.0877 1.08242 18.2472 1.22826C18.4067 1.3741 18.4963 1.5719 18.4963 1.77814V7.99937"
+                  stroke="#707070"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M10.4187 1.00049H14.6714V4.49993H10.4187V1.00049Z"
+                  stroke="#707070"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </div>
-            <div>
-              <p className="text-orange-400">
-                <span className="text-orange-400">Free Delivery</span> 4Nov -
+            <div className="mt-1">
+              <p className="text-orange-400 text-[12px]">
+                <span className="text-orange-400 text-[12px]">Free Delivery</span> 4Nov -
                 8Nov 3- 5 days
               </p>
             </div>
           </div>
-          <p className="ml-6">
-            Enjoy free shipping promotion with minimum spend of ৳ 499 from{" "}
-            <span className="text-orange-400">xpress</span>.
+          <p className="ml-6 mt-1 text-[12px]">
+            Enjoy free shipping promotion with <br></br> minimum  spend of ৳ 499 from{" "}
+            <span className="text-orange-400 text-[12px]">xpress</span>.
           </p>
-          <div className="flex  gap-2 items-center">
+          <div className="flex mt-2  gap-2 items-center">
             <div>
-              <img src="https://i.ibb.co/n7wpxmM/Time-Circle-6-removebg-preview.png"></img>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="14"
+                viewBox="0 0 19 14"
+                fill="none"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M0.485352 3.60973C0.485352 1.63459 2.20506 0 4.36935 0H14.6014C16.7656 0 18.4854 1.63459 18.4854 3.60973C18.4854 5.14443 17.4505 6.47027 15.9736 6.98865V10.4448C15.9736 10.6794 15.9736 10.9011 15.9711 11.1092C15.9752 11.1503 15.9744 11.1916 15.9686 11.2325C15.967 11.5363 15.9463 11.8398 15.9066 12.1414C15.8363 12.6166 15.6806 13.0457 15.2988 13.3901C14.9178 13.7351 14.4431 13.8759 13.9173 13.9395C13.42 14 12.7921 14 12.0402 14H6.93049C6.17864 14 5.5507 14 5.05338 13.9395C4.52759 13.8759 4.05287 13.7351 3.67192 13.3901C3.29013 13.0457 3.1344 12.6166 3.06408 12.1414C3.02453 11.8397 3.00385 11.5363 3.00212 11.2325C2.99638 11.1916 2.99554 11.1503 2.99961 11.1092C2.9971 10.9011 2.9971 10.6794 2.9971 10.4448V6.98865C1.52019 6.47027 0.485352 5.14443 0.485352 3.60973ZM2.9971 5.72108C2.9971 5.08692 3.00045 4.55568 3.06408 4.12886C3.1344 3.65362 3.29013 3.22454 3.67108 2.88022C4.05287 2.53514 4.52759 2.39438 5.05254 2.33081C5.5507 2.27027 6.17864 2.27027 6.93049 2.27027H12.0411C12.7937 2.27027 13.4208 2.27027 13.9182 2.33081C14.444 2.39438 14.9187 2.53514 15.2996 2.87946C15.6814 3.22454 15.8371 3.65362 15.9075 4.12811C15.9711 4.55492 15.9744 5.08692 15.9744 5.72108C16.7229 5.28822 17.2303 4.51027 17.2303 3.60973C17.2303 2.22486 16.0339 1.13514 14.6022 1.13514H4.37018C2.93849 1.13514 1.74206 2.22486 1.74206 3.60973C1.74206 4.51027 2.2486 5.28822 2.9971 5.72108ZM8.85783 3.40541H6.97403C6.16692 3.40541 5.62438 3.40692 5.21999 3.45611C4.83402 3.50303 4.66824 3.584 4.5594 3.68314C4.45056 3.78151 4.36097 3.93059 4.30823 4.27946C4.25464 4.64497 4.25297 5.13535 4.25297 5.86487V10.5946H14.7186V5.86487C14.7186 5.13535 14.7169 4.64497 14.6625 4.27946C14.6106 3.93059 14.521 3.78076 14.4113 3.68238C14.3025 3.584 14.1375 3.50303 13.7515 3.45535C13.3472 3.40692 12.8046 3.40541 11.9975 3.40541H10.1137V6.60119L10.683 6.00032C10.7367 5.94368 10.8022 5.89714 10.8757 5.86336C10.9493 5.82959 11.0295 5.80924 11.1117 5.80348C11.194 5.79772 11.2767 5.80665 11.3551 5.82978C11.4335 5.85291 11.5062 5.88977 11.5688 5.93827C11.6315 5.98677 11.683 6.04595 11.7204 6.11243C11.7577 6.17891 11.7803 6.2514 11.7866 6.32574C11.793 6.40009 11.7831 6.47484 11.7575 6.54574C11.7319 6.61663 11.6912 6.68227 11.6375 6.73892L9.963 8.50443C9.90405 8.56674 9.83087 8.61676 9.74848 8.65106C9.6661 8.68536 9.57647 8.70312 9.48577 8.70312C9.39507 8.70312 9.30544 8.68536 9.22306 8.65106C9.14067 8.61676 9.06749 8.56674 9.00854 8.50443L7.33404 6.73892C7.22568 6.62452 7.17204 6.47589 7.18491 6.32574C7.19779 6.17559 7.27613 6.03621 7.4027 5.93827C7.52927 5.84033 7.6937 5.79184 7.85982 5.80348C8.02594 5.81512 8.18014 5.88592 8.2885 6.00032L8.85783 6.60119V3.40541ZM14.6918 11.7297H4.27976C4.2873 11.8236 4.29651 11.9098 4.30906 11.9908C4.36097 12.3397 4.45056 12.4895 4.56024 12.5879C4.66908 12.6863 4.83402 12.7672 5.21999 12.8149C5.62438 12.8634 6.16692 12.8649 6.97403 12.8649H11.9975C12.8046 12.8649 13.3472 12.8634 13.7515 12.8142C14.1375 12.7672 14.3033 12.6863 14.4121 12.5871C14.521 12.4888 14.6106 12.3397 14.6633 11.9908C14.675 11.9098 14.6842 11.8236 14.6918 11.7297Z"
+                  fill="#707070"
+                />
+              </svg>
             </div>
             <div>
-              <p className="text-orange-400">Cash on delivery available</p>
+              <p className="text-orange-400 text-[14px]">Cash on delivery available</p>
             </div>
           </div>
         </div>

@@ -1,0 +1,32 @@
+.verticalLine {
+  position: absolute;
+  height: 78%;
+  width: 1px;
+  background-color: #ccc;
+  top: 5;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1023px) {
+  .verticalLine {
+    display: none;
+  }
+}
+
+.verticalLine2 {
+    position: absolute;
+    height: 78%;
+    width: 1px;
+    background-color: #ccc; 
+    top: 5;
+    left: 64%; 
+    transform: translateX(-50%);
+    
+  }
+
+@media (max-width: 1023px) {
+  .verticalLine2 {
+    display: none; 
+  }
+}

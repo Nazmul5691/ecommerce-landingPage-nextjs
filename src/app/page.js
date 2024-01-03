@@ -8,9 +8,8 @@ import SellerInfo from "@/components/SellerInfo/SellerInfo";
 
 const page = () => {
   return (
-    <div  className="w-[1920px]  bg-slate-200 h-[1600px] lg:h-[1000px]">
+    <div  className="lg:w-[1920px]  lg:bg-slate-200 h-[1500px] lg:h-[1000px]">
       <Navbar1></Navbar1>
-      
       <Navbar2></Navbar2>
       <CategoryList></CategoryList>
       <Product></Product>
